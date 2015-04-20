@@ -1,0 +1,12 @@
+{
+  "name": "popups",
+  "repo": "tomato-fe/popups",
+  "description": "jq plug popups",
+  "version": "0.1.0",
+  "keywords": ["popups", "jq"],
+  "files": [
+    "popups.css",
+    "popups.js"
+  ],
+  "license": "MIT"
+}

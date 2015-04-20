@@ -1,0 +1,88 @@
+/*****************************************************************
+ *
+ * 弹出层
+ * 
+ * ui-popups
+ *
+ ****************************************************************/
+.ui-popups {
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+	text-align: center;
+	overflow: auto;
+}
+
+.ui-popups:after {
+	display: inline-block;
+	vertical-align: middle;
+	content: '';
+	height: 100%;
+	margin-left: -0.25em;
+}
+
+.ui-popups-dialog {
+	position: relative;
+	display: inline-block;
+ 	vertical-align: middle;
+	max-width: 99%;
+   	/*max-width: calc(100% - 0.25em) /* Only for IE9+ */
+	background-color: #ffffff;
+}
+
+.ui-popups-backdrop {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: .5;
+	filter:alpha(opacity=50);  /*支持 IE 浏览器*/
+	-moz-opacity:0.50; /*支持 FireFox 浏览器*/
+	background-color: #000;
+}
+
+.ui-popups-head {
+	padding: 8px 0;
+	background-color: #f2f2f2;
+}
+
+.ui-popups-dialog>.close {
+	position: absolute;
+	right: -36px;
+	width: 36px;
+	height: 36px;
+	color: #b4a39d;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 36px;
+	text-align: center;
+	background-color: #4c4c4c;
+	cursor: pointer;
+}
+
+.ui-popups-title {
+	font-size: 14px;
+	text-align: left;
+	color: #666666;
+	padding-left: 14px;
+	border-left: solid 4px #e84544;
+}
+
+.ui-popups-body {
+	padding: 15px 24px;
+	text-align: left;
+	word-break: break-all;
+	overflow: auto;
+}
+
+.ui-popups-foot {
+	padding: 15px 24px;
+	padding-top: 0;
+	text-align: left;
+}
