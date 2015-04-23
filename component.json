@@ -4,9 +4,10 @@
   "description": "jq plug popups",
   "version": "0.1.0",
   "keywords": ["popups", "jq"],
+  "main": "index.js",
   "files": [
-    "popups.css",
-    "popups.js"
+    "index.css",
+    "index.js"
   ],
   "license": "MIT"
 }
