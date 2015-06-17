@@ -31,6 +31,13 @@
 
     }
 
+    Popups.prototype.justshow = function() {
+      this.isShown = true
+      this.$element.on('click.dismiss.tc.popups', '[data-dismiss="popups"]', $.proxy(this.hide, this))
+      this.backdrop()
+      this.$element.show().css('visibility', 'visible');
+    }
+
     Popups.prototype.hide = function (e) {
       e = $.Event('hide.tc.popups')
       this.$element.trigger(e)
